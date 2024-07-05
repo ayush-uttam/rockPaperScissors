@@ -65,10 +65,9 @@
 }
 
 #info {
-    height: 7vh;
+    padding: 1rem;
     width: fit-content;
     margin-top: 5vh;
-    border: 2px solid black;
     text-align: center;
     background-color: black;
     color: white;
