@@ -9,9 +9,9 @@ let drawScore = document.querySelector("#drawScore");
 let result = document.querySelector("#result");
 let info = document.querySelector("#info");
 
-let claps = document.querySelector("#claps");
-let boo = document.querySelector("#boo");
-let ohno = document.querySelector("#ohno");
+//let claps = document.querySelector("#claps");
+//let boo = document.querySelector("#boo");
+//let ohno = document.querySelector("#ohno");
 
 let iterations = document.querySelector("#iterations");
 
