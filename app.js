@@ -11,6 +11,10 @@ let info = document.querySelector("#info");
 let claps = document.querySelector("#claps");
 let boo = document.querySelector("#boo");
 
+let iterations = document.querySelector("#iterations");
+
+let timesPlayed = 0;
+
 let score_Comp = 0;
 let score_Player = 0;
 
@@ -25,6 +29,8 @@ let st = 0,
   sc = 0;
 
 stone.addEventListener("click", () => {
+    timesPlayed++;
+    iterations.innerText = ""+timesPlayed;
     boo.pause();
     claps.pause();
     compVal=randomGen();
@@ -49,6 +55,8 @@ stone.addEventListener("click", () => {
 });
 
 paper.addEventListener("click", () => {
+    timesPlayed++;
+    iterations.innerText = ""+timesPlayed;
     boo.pause();
     claps.pause();
     compVal=randomGen();
@@ -73,6 +81,8 @@ paper.addEventListener("click", () => {
 });
 
 scissor.addEventListener("click", () => {
+    timesPlayed++;
+    iterations.innerText = ""+timesPlayed;
     boo.pause();
     claps.pause();
     compVal=randomGen();
