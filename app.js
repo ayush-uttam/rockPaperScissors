@@ -8,6 +8,9 @@ let playerScore = document.querySelector("#playerScore");
 let result = document.querySelector("#result");
 let info = document.querySelector("#info");
 
+let claps = document.querySelector("#claps");
+let boo = document.querySelector("#boo");
+
 let score_Comp = 0;
 let score_Player = 0;
 
@@ -22,6 +25,8 @@ let st = 0,
   sc = 0;
 
 stone.addEventListener("click", () => {
+    boo.pause();
+    claps.pause();
     compVal=randomGen();
   if (compVal == 1) {
     result.innerText = "Draw, Computer chose Stone";
@@ -32,22 +37,27 @@ stone.addEventListener("click", () => {
     info.style.backgroundColor = "red";
     score_Comp++;
     compScore.innerText = ""+score_Comp;
+    boo.play();
   }
   if (compVal == 3) {
     result.innerText = "You Win, Computer choose Scissor";
     info.style.backgroundColor = "green";
     score_Player++;
     playerScore.innerText = ""+score_Player;
+    claps.play();
   }
 });
 
 paper.addEventListener("click", () => {
+    boo.pause();
+    claps.pause();
     compVal=randomGen();
   if (compVal == 1) {
     result.innerText = "You Win, Computer chose Stone";
     info.style.backgroundColor = "green";
     score_Player++;
     playerScore.innerText = ""+score_Player;
+    claps.play();
   }
   if (compVal == 2) {
     result.innerText = "Draw, Computer chose Paper";
@@ -58,22 +68,27 @@ paper.addEventListener("click", () => {
     info.style.backgroundColor = "red";
     score_Comp++;
     compScore.innerText = ""+score_Comp;
+    boo.play();
   }
 });
 
 scissor.addEventListener("click", () => {
+    boo.pause();
+    claps.pause();
     compVal=randomGen();
   if (compVal == 1) {
     result.innerText = "You Loose, Computer chose Stone";
     info.style.backgroundColor = "red";
     score_Comp++;
     compScore.innerText = ""+score_Comp;
+    boo.play();
   }
   if (compVal == 2) {
     result.innerText = "You Win, Computer chose Paper";
     info.style.backgroundColor = "green";
     score_Player++;
     playerScore.innerText = ""+score_Player;
+    claps.play();
   }
   if (compVal == 3) {
     result.innerText = "Draw, Computer choose Scissor";
