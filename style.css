@@ -1,10 +1,10 @@
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
 .navbar {
-    height: 60px;
+    height: 10vh;
     background-color: black;
     color: white;
     text-align: center;
@@ -14,13 +14,13 @@
 }
 
 .images {
-    margin-top: 100px;
+    padding-top: 13vh;
     display: flex;
     justify-content: center;
 }
 
 .photo {
-    margin: 0px 15px;
+    margin: 0px 1vw;
 }
 
 .photo:hover {
@@ -28,14 +28,24 @@
     border-radius: 50%;
 }
 
+.totalPlays {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
 .score {
-    margin-top: 100px;
+    margin-top: 5vh;
     display: flex;
     justify-content: center;
 }
 
+#iterations {
+    margin-left: 1vw;
+}
+
 #playerScore, #compScore{
-    margin: 0px 70px;
+    margin: 0px 5vw;
 }
 
 .names {
@@ -44,7 +54,7 @@
 }
 
 #player, #comp{
-    margin: 0px 40px;
+    margin: 0px 3vw;
 }
 
 .text {
@@ -54,9 +64,9 @@
 }
 
 #info {
-    height: 55px;
+    height: 9vh;
     width: fit-content;
-    margin-top: 30px;
+    margin-top: 5vh;
     border: 2px solid black;
     text-align: center;
     background-color: black;
