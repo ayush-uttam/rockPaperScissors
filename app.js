@@ -51,7 +51,7 @@ stone.addEventListener("click", () => {
     boo.play();
   }
   if (compVal == 3) {
-    result.innerText = "You Win, Computer choose Scissor";
+    result.innerText = "You Win, Computer chose Scissor";
     info.style.backgroundColor = "green";
     score_Player++;
     playerScore.innerText = ""+score_Player;
@@ -81,7 +81,7 @@ paper.addEventListener("click", () => {
     ohno.play();
   }
   if (compVal == 3) {
-    result.innerText = "You Loose, Computer choose Scissor";
+    result.innerText = "You Loose, Computer chose Scissor";
     info.style.backgroundColor = "red";
     score_Comp++;
     compScore.innerText = ""+score_Comp;
@@ -111,7 +111,7 @@ scissor.addEventListener("click", () => {
     claps.play();
   }
   if (compVal == 3) {
-    result.innerText = "Draw, Computer choose Scissor";
+    result.innerText = "Draw, Computer chose Scissor";
     info.style.backgroundColor = "blue";
     score_Draw++;
     drawScore.innerText = ""+score_Draw;
